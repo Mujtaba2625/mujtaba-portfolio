@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mujtaba | Copywriter Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0d0d0d;
+      --secondary: #f9f9f9;
+      --accent: #ff4d4d;
+      --matte-gold: #d4af37;
+      --soft-box: #1f1f1f;
+      --card-bg: #2c2c2c;
+      --card-text: #e0e0e0;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
+      color: var(--card-text);
+      scroll-behavior: smooth;
+    }
+    header {
+      background: var(--primary);
+      padding: 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    header img {
+      width: 100%;
+      max-height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+    .container {
+      padding: 3rem 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    .fade-in-delay {
+      animation-delay: 0.3s;
+    }
+    .fade-in-delay-2 {
+      animation-delay: 0.6s;
+    }
+    .fade-in-delay-3 {
+      animation-delay: 0.9s;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .hero h1,
+    .section h2 {
+      color: var(--matte-gold);
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      color: #aaa;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .section {
+      margin: 4rem 0;
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      border: none;
+      border-radius: 1rem;
+      padding: 2rem;
+      background: var(--card-bg);
+      color: var(--card-text);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+    .contact a {
+      display: inline-flex;
+      align-items: center;
+      margin: 0.5rem;
+      text-decoration: none;
+      color: var(--card-text);
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+      color: var(--accent);
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 9999px;
+      font-size: 1rem;
+      margin-top: 1rem;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .btn:hover {
+      background: #e03a3a;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://images.unsplash.com/photo-1516542076529-1ea3854896f2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800" alt="Hero Image" />
+  </header>
+  <div class="container">
+    <section class="hero text-center fade-in">
+      <h1>Mujtaba | Copywriter</h1>
+      <p>Words That Sell. Strategy That Scales.</p>
+    </section>
+    <!-- Content continues... -->
+  </div>
+</body>
+</html>
