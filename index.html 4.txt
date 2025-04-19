@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mujtaba | Copywriter Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #f1c40f;
+      --background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      --card-bg: #262626;
+      --text-light: #eaeaea;
+      --muted: #aaa;
+      --link-hover: #ffd700;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--background);
+      color: var(--text-light);
+      scroll-behavior: smooth;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1516542076529-1ea3854896f2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800') center/cover no-repeat;
+      height: 300px;
+    }
+    .container {
+      padding: 3rem 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    .fade-in-delay {
+      animation-delay: 0.3s;
+    }
+    .fade-in-delay-2 {
+      animation-delay: 0.6s;
+    }
+    .fade-in-delay-3 {
+      animation-delay: 0.9s;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    h1, h2, h3 {
+      color: var(--primary);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .section {
+      margin: 4rem 0;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.3);
+    }
+    .card a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .card a:hover {
+      color: var(--link-hover);
+    }
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem;
+      color: var(--text-light);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      color: var(--link-hover);
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background: var(--primary);
+      color: #000;
+      border-radius: 9999px;
+      font-size: 1rem;
+      margin-top: 1rem;
+      text-decoration: none;
+    }
+    .email-sample {
+      background: #1e1e1e;
+      border-left: 4px solid var(--primary);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header></header>
+  <div class="container">
+    <section class="hero text-center fade-in">
+      <h1>Mujtaba | Copywriter</h1>
+      <p>Words That Sell. Strategy That Scales.</p>
+    </section>
+
+    <section class="section text-center fade-in fade-in-delay">
+      <h2>What I Do</h2>
+      <p>I help business coaches and online service providers turn browsers into buyers through persuasive, conversion-focused copywriting. Whether it’s email sequences, landing pages, or sales pages — I craft copy that gets clicks, builds trust, and drives revenue.</p>
+    </section>
+
+    <section class="section fade-in fade-in-delay-2">
+      <h2 class="text-center">Selected Work</h2>
+      <div class="email-sample">
+        <h3>Fitness Email Sequence</h3>
+        <a href="https://docs.google.com/document/d/19hbmoOyw7DEJ8EK4z03ooTrRQd6Iv5nD4YN037xS_rc/edit?usp=sharing" target="_blank">View Fitness Email</a>
+      </div>
+      <div class="email-sample">
+        <h3>Real Estate Email Sequence</h3>
+        <a href="https://docs.google.com/document/d/1t5XnvkLbEiPQKvFxQCFYOQ7Q_3Wtj9bG1hqnY6IHDIY/edit?usp=sharing" target="_blank">View Real Estate Email</a>
+      </div>
+      <div class="email-sample">
+        <h3>Other Niche Email</h3>
+        <a href="https://docs.google.com/document/d/1hBRzPz5zIxZS0tHy6nNzma4PpZ0_srel-XuEjv0nuIk/edit?usp=sharing" target="_blank">View Niche Email</a>
+      </div>
+      <div class="email-sample">
+        <h3>Sales Page</h3>
+        <a href="https://docs.google.com/document/d/1rp_ZkTbvkciPpvoQZcfXpSG8LCZAmOIKrVJZq9jCbsA/edit?usp=sharing" target="_blank">View Sales Page</a>
+      </div>
+    </section>
+
+    <section class="section text-center fade-in fade-in-delay-3">
+      <h2>Why Me?</h2>
+      <p>I'm not just another copywriter. I blend strategy with storytelling to help you convert readers into buyers. While most write copy that sounds good, I write copy that performs — because in business, results are what matter most. Let's make every word work for you.</p>
+    </section>
+
+    <section class="section text-center contact fade-in fade-in-delay-3">
+      <h2>Let's Work Together</h2>
+      <p>Ready to turn words into profit? I’m just a message away.</p>
+      <a href="mailto:mujtaba2625@gmail.com">📧 mujtaba2625@gmail.com</a>
+      <a href="https://instagram.com/mujtabacw" target="_blank">📷 @mujtabacw</a>
+      <br />
+      <a href="mailto:mujtaba2625@gmail.com" class="btn">Hire Me</a>
+    </section>
+  </div>
+</body>
+</html>
