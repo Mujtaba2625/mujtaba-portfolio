@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mujtaba | Copywriter Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0d0d0d;
+      --secondary: #f9f9f9;
+      --accent: #ff4d4d;
+      --heading-color: #d4af37;
+      --box-bg: #1c1c1c;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #000000, #1a1a1a);
+      color: var(--secondary);
+      scroll-behavior: smooth;
+    }
+    header img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+    .container {
+      padding: 3rem 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    .fade-in-delay { animation-delay: 0.3s; }
+    .fade-in-delay-2 { animation-delay: 0.6s; }
+    .fade-in-delay-3 { animation-delay: 0.9s; }
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h1, h2, h3 {
+      color: var(--heading-color);
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      color: #ccc;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .section {
+      margin: 4rem 0;
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      border: none;
+      border-radius: 1rem;
+      padding: 2rem;
+      background: var(--box-bg);
+      color: var(--secondary);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+    }
+    .card a {
+      color: #4da6ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact a {
+      display: inline-flex;
+      align-items: center;
+      margin: 0.5rem;
+      text-decoration: none;
+      color: var(--secondary);
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+      color: var(--accent);
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 9999px;
+      font-size: 1rem;
+      margin-top: 1rem;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .btn:hover {
+      background: #e60000;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://images.unsplash.com/photo-1516542076529-1ea3854896f2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800" alt="Man typing on laptop" />
+  </header>
+  <div class="container">
+    <section class="hero text-center fade-in">
+      <h1>Mujtaba | Copywriter</h1>
+      <p>Words That Sell. Strategy That Scales.</p>
+    </section>
+
+    <section class="section fade-in fade-in-delay">
+      <h2 class="text-center">What I Do</h2>
+      <p class="text-center">I help businesses increase revenue through high-converting email sequences, sales pages, landing pages, and more — written with strategy and backed by psychology.</p>
+    </section>
+
+    <section class="section fade-in fade-in-delay">
+      <h2 class="text-center">Why Me?</h2>
+      <p class="text-center">I'm not just another copywriter. I understand business, sales psychology, and human behavior. I write copy that gets results — whether it's landing pages, emails, or ads. I treat your business like it's my own.</p>
+    </section>
+
+    <section class="section fade-in fade-in-delay-2">
+      <h2 class="text-center">Selected Work</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Real Estate Email</h3>
+          <a href="https://docs.google.com/document/d/1t5XnvkLbEiPQKvFxQCFYOQ7Q_3Wtj9bG1hqnY6IHDIY/edit?usp=sharing" target="_blank">View</a>
+        </div>
+        <div class="card">
+          <h3>Fitness Email</h3>
+          <a href="https://docs.google.com/document/d/19hbmoOyw7DEJ8EK4z03ooTrRQd6Iv5nD4YN037xS_rc/edit?usp=sharing" target="_blank">View</a>
+        </div>
+        <div class="card">
+          <h3>Different Niche Email</h3>
+          <a href="https://docs.google.com/document/d/1hBRzPz5zIxZS0tHy6nNzma4PpZ0_srel-XuEjv0nuIk/edit?usp=sharing" target="_blank">View</a>
+        </div>
+        <div class="card">
+          <h3>Sales Page</h3>
+          <a href="https://docs.google.com/document/d/1rp_ZkTbvkciPpvoQZcfXpSG8LCZAmOIKrVJZq9jCbsA/edit?usp=sharing" target="_blank">View</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact fade-in fade-in-delay-3 text-center">
+      <h2>Let's Work Together</h2>
+      <p>Email me or connect with me on Instagram:</p>
+      <a href="mailto:mujtaba2625@gmail.com">📧 mujtaba2625@gmail.com</a>
+      <a href="https://instagram.com/mujtabacw" target="_blank">📸 @mujtabacw</a>
+      <br />
+      <a href="mailto:mujtaba2625@gmail.com" class="btn">Hire Me</a>
+    </section>
+  </div>
+</body>
+</html>
