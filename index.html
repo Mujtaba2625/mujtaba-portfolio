@@ -15,44 +15,35 @@
     }
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
     body {
       font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
       background: linear-gradient(to bottom, #000000, #1a1a1a);
       color: var(--secondary);
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
     header img {
       width: 100%;
-      max-height: 300px;
+      max-height: 400px;
       object-fit: cover;
-      display: block;
+      animation: fadeIn 2s ease-in;
     }
     .container {
       padding: 3rem 1.5rem;
       max-width: 1200px;
       margin: 0 auto;
+      animation: fadeInUp 1s ease forwards;
     }
     .text-center {
       text-align: center;
     }
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s ease-out forwards;
-    }
-    .fade-in-delay { animation-delay: 0.3s; }
-    .fade-in-delay-2 { animation-delay: 0.6s; }
-    .fade-in-delay-3 { animation-delay: 0.9s; }
-    @keyframes fadeInUp {
-      to { opacity: 1; transform: translateY(0); }
-    }
     h1, h2, h3 {
       color: var(--heading-color);
     }
-    .hero h1 {
+    h1 {
       font-size: 3.5rem;
       margin-bottom: 0.5rem;
     }
@@ -64,10 +55,7 @@
     }
     .section {
       margin: 4rem 0;
-    }
-    .section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      animation: fadeInUp 1.5s ease;
     }
     .grid {
       display: grid;
@@ -75,18 +63,17 @@
       gap: 2rem;
     }
     .card {
-      border: none;
       border-radius: 1rem;
       padding: 2rem;
       background: var(--box-bg);
       color: var(--secondary);
       box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
       text-align: center;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
     }
     .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+      transform: scale(1.05);
+      box-shadow: 0 15px 25px rgba(255,255,255,0.1);
     }
     .card a {
       color: #4da6ff;
@@ -121,6 +108,14 @@
       background: #e60000;
       transform: scale(1.05);
     }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
@@ -128,22 +123,22 @@
     <img src="https://images.unsplash.com/photo-1516542076529-1ea3854896f2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800" alt="Man typing on laptop" />
   </header>
   <div class="container">
-    <section class="hero text-center fade-in">
+    <section class="hero text-center">
       <h1>Mujtaba | Copywriter</h1>
       <p>Words That Sell. Strategy That Scales.</p>
     </section>
 
-    <section class="section fade-in fade-in-delay">
-      <h2 class="text-center">What I Do</h2>
-      <p class="text-center">I help businesses increase revenue through high-converting email sequences, sales pages, landing pages, and more — written with strategy and backed by psychology.</p>
+    <section class="section text-center">
+      <h2>What I Do</h2>
+      <p>I help businesses increase revenue through high-converting email sequences, sales pages, landing pages, and more — written with strategy and backed by psychology.</p>
     </section>
 
-    <section class="section fade-in fade-in-delay">
-      <h2 class="text-center">Why Me?</h2>
-      <p class="text-center">I'm not just another copywriter. I understand business, sales psychology, and human behavior. I write copy that gets results — whether it's landing pages, emails, or ads. I treat your business like it's my own.</p>
+    <section class="section text-center">
+      <h2>Why Me?</h2>
+      <p>I'm not just another copywriter. I understand business, sales psychology, and human behavior. I write copy that gets results — whether it's landing pages, emails, or ads. I treat your business like it's my own.</p>
     </section>
 
-    <section class="section fade-in fade-in-delay-2">
+    <section class="section">
       <h2 class="text-center">Selected Work</h2>
       <div class="grid">
         <div class="card">
@@ -170,22 +165,23 @@
           <h3>VSL</h3>
           <a href="https://docs.google.com/document/d/1OcQc87EDzlla5F6dl1kcqjoHpRYUD-9OKpQr0eF7Rsk/edit?usp=sharing" target="_blank">View</a>
         </div>
-      </div class="card">
-      <h3>More</h3>
-      <a href="https://docs.google.com/document/d/1Bimivet57nsRBHpnaVCA8Hr2XfGItJWMgSnROW6rAvM/edit?usp=sharing" target="_blank">View</a>
-  </div>
-</div>
+        <div class="card">
+          <h3>More</h3>
+          <a href="https://docs.google.com/document/d/1Bimivet57nsRBHpnaVCA8Hr2XfGItJWMgSnROW6rAvM/edit?usp=sharing" target="_blank">View</a>
+        </div>
+      </div>
     </section>
 
-    <section class="section contact fade-in fade-in-delay-3 text-center">
+    <section class="section contact text-center">
       <h2>Let's Work Together</h2>
       <p>Email me or connect with me on Instagram:</p>
       <a href="mailto:mujtaba2625@gmail.com">📧 mujtaba2625@gmail.com</a>
       <a href="https://instagram.com/mujtabacw" target="_blank">📸 @mujtabacw</a>
       <br />
-      <a href="mailto:mujtaba2625@gmail.com" class="btn">Grow Your Biz</a>
+      <a href="mailto:mujtaba2625@gmail.com" class="btn">Hire Me</a>
     </section>
   </div>
 </body>
 </html>
+
 
