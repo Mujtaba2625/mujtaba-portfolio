@@ -76,7 +76,7 @@
       box-shadow: 0 6px 20px rgba(0,0,0,0.3);
       text-align: center;
       transition: transform 0.5s ease, box-shadow 0.5s ease;
-      animation: popIn 1s ease forwards, hoverGlow 3s infinite alternate;
+      animation: popIn 1s ease forwards;
       transform: scale(0.95);
     }
     .card:hover {
@@ -116,11 +116,6 @@
       background: #e60000;
       transform: scale(1.05);
     }
-    .price-tag {
-      font-size: 1rem;
-      color: #aaa;
-      margin-top: 0.5rem;
-    }
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -140,10 +135,6 @@
     @keyframes popIn {
       0% { transform: scale(0.9); opacity: 0; }
       100% { transform: scale(1); opacity: 1; }
-    }
-    @keyframes hoverGlow {
-      0% { box-shadow: 0 0 0 rgba(255, 255, 255, 0); }
-      100% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
     }
   </style>
 </head>
@@ -173,32 +164,26 @@
         <div class="card">
           <h3>Real Estate Email</h3>
           <a href="https://docs.google.com/document/d/1t5XnvkLbEiPQKvFxQCFYOQ7Q_3Wtj9bG1hqnY6IHDIY/edit?usp=sharing" target="_blank">View</a>
-          <p class="price-tag">Starting at $100</p>
         </div>
         <div class="card">
           <h3>Fitness Email</h3>
           <a href="https://docs.google.com/document/d/19hbmoOyw7DEJ8EK4z03ooTrRQd6Iv5nD4YN037xS_rc/edit?usp=sharing" target="_blank">View</a>
-          <p class="price-tag">Starting at $100</p>
         </div>
         <div class="card">
           <h3>Different Niche Email</h3>
           <a href="https://docs.google.com/document/d/1hBRzPz5zIxZS0tHy6nNzma4PpZ0_srel-XuEjv0nuIk/edit?usp=sharing" target="_blank">View</a>
-          <p class="price-tag">Starting at $100</p>
         </div>
         <div class="card">
           <h3>Sales Page</h3>
           <a href="https://docs.google.com/document/d/1rp_ZkTbvkciPpvoQZcfXpSG8LCZAmOIKrVJZq9jCbsA/edit?usp=sharing" target="_blank">View</a>
-          <p class="price-tag">Starting at $300</p>
         </div>
         <div class="card">
           <h3>Landing Page</h3>
           <a href="https://docs.google.com/document/d/1jHNqndyxmp-FH8d2uY2Slkt_XjLPhKDZ8w7-9EPGgvg/edit?usp=sharing" target="_blank">View</a>
-          <p class="price-tag">Starting at $200</p>
         </div>
         <div class="card">
           <h3>More</h3>
           <a href="https://docs.google.com/document/d/1Bimivet57nsRBHpnaVCA8Hr2XfGItJWMgSnROW6rAvM/edit?usp=sharing" target="_blank">View</a>
-          <p class="price-tag">Custom Pricing</p>
         </div>
       </div>
     </section>
@@ -214,6 +199,7 @@
   </div>
 </body>
 </html>
+
 
 
 
