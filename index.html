@@ -25,6 +25,10 @@
       scroll-behavior: smooth;
       overflow-x: hidden;
     }
+    header {
+      position: relative;
+      overflow: hidden;
+    }
     header img {
       width: 100%;
       max-height: 400px;
@@ -42,10 +46,12 @@
     }
     h1, h2, h3 {
       color: var(--heading-color);
+      animation: slideIn 1.5s ease;
     }
-    h1 {
+    .hero h1 {
       font-size: 3.5rem;
       margin-bottom: 0.5rem;
+      animation: scaleUp 1.2s ease-in-out;
     }
     .hero p {
       font-size: 1.5rem;
@@ -70,6 +76,8 @@
       box-shadow: 0 6px 20px rgba(0,0,0,0.3);
       text-align: center;
       transition: transform 0.5s ease, box-shadow 0.5s ease;
+      animation: popIn 1s ease forwards, hoverGlow 3s infinite alternate;
+      transform: scale(0.95);
     }
     .card:hover {
       transform: scale(1.05);
@@ -115,6 +123,22 @@
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideIn {
+      0% { transform: translateX(-50px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes scaleUp {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    @keyframes popIn {
+      0% { transform: scale(0.9); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes hoverGlow {
+      0% { box-shadow: 0 0 0 rgba(255, 255, 255, 0); }
+      100% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
     }
   </style>
 </head>
@@ -162,10 +186,6 @@
           <a href="https://docs.google.com/document/d/1jHNqndyxmp-FH8d2uY2Slkt_XjLPhKDZ8w7-9EPGgvg/edit?usp=sharing" target="_blank">View</a>
         </div>
         <div class="card">
-          <h3>VSL</h3>
-          <a href="https://docs.google.com/document/d/1OcQc87EDzlla5F6dl1kcqjoHpRYUD-9OKpQr0eF7Rsk/edit?usp=sharing" target="_blank">View</a>
-        </div>
-        <div class="card">
           <h3>More</h3>
           <a href="https://docs.google.com/document/d/1Bimivet57nsRBHpnaVCA8Hr2XfGItJWMgSnROW6rAvM/edit?usp=sharing" target="_blank">View</a>
         </div>
@@ -183,5 +203,4 @@
   </div>
 </body>
 </html>
-
 
